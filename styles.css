@@ -1,0 +1,157 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #007bff;
+  padding: 0.75rem; /* Slightly reduced padding */
+  color: white;
+  text-align: center;
+  font-size: 1.75rem; /* Slightly smaller font size */
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem; /* Remove padding to make full use of the space */
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  max-width: 90%; /* Slightly reduced max-width */
+  text-align: center;
+  background-color: white;
+  padding: 1.5rem; /* Slightly reduced padding */
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; /* Slightly reduced border-radius */
+  margin: 0; /* Remove margin */
+}
+
+.hero h2 {
+  font-size: 1.75rem; /* Slightly smaller font size */
+  margin-bottom: 0.75rem; /* Slightly reduced margin */
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem; /* Slightly reduced gap */
+}
+
+input, button {
+  padding: 0.6rem 0.8rem; /* Slightly reduced padding */
+  font-size: 0.9rem; /* Slightly smaller font size */
+}
+
+input {
+  flex: 1;
+  border: 2px solid #ccc;
+  border-radius: 4px; /* Slightly reduced border-radius */
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px; /* Slightly reduced border-radius */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Car Result Section */
+#car-result {
+  margin-top: 1.5rem; /* Slightly reduced margin-top */
+  width: 100%;
+  max-width: 90%; /* Slightly reduced max-width */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Slightly reduced gap */
+  padding: 0; /* Remove padding to utilize full space */
+}
+
+/* Section 1: Short Description and Image */
+.section-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* Slightly reduced gap */
+}
+
+.short-description, .car-image {
+  flex: 1;
+}
+
+.short-description p {
+  font-size: 1rem; /* Slightly smaller font size */
+  background-color: #f8f9fa;
+  padding: 0.75rem; /* Slightly reduced padding */
+  border-radius: 6px; /* Slightly reduced border-radius */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.car-image img {
+  max-width: 100%;
+  border-radius: 8px; /* Slightly reduced border-radius */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section 2: Commercial Video */
+.section-2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem; /* Padding around iframe */
+  box-sizing: border-box; /* Ensure padding does not affect width */
+}
+
+.section-2 iframe {
+  width: calc(100% - 2rem); /* Adjust width to account for padding */
+  height: calc(100vh - 2rem); /* Adjust height to account for padding */
+  position: relative;
+  border: none;
+  border-radius: 6px; /* Slightly reduced border-radius */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+iframe {
+  pointer-events: none;
+}
+
+/* Section 3: Long Description */
+.section-3 p {
+  font-size: 1.1rem; /* Slightly smaller font size */
+  line-height: 1.5; /* Slightly reduced line-height */
+  background-color: #f8f9fa;
+  padding: 0.75rem; /* Slightly reduced padding */
+  border-radius: 6px; /* Slightly reduced border-radius */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 0.75rem; /* Slightly reduced padding */
+  background-color: #343a40;
+  color: white;
+  font-size: 0.85rem; /* Slightly smaller font size */
+}
